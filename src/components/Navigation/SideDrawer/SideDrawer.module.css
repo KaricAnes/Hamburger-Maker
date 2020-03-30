@@ -1,0 +1,50 @@
+.SideDrawer{
+
+position:fixed;
+width: 200px;
+max-width: 70%;
+height: 100%;
+left:0;
+top:0;
+
+/*mora biti veci broj backdrop.cssa jer sideDrawwr treba da je iznad backdropa*/
+z-index: 200;
+background-color: white;
+padding: 32px 16px;
+box-sizing: border-box;
+
+/*bitno za opening i closing sideDrawera*/
+transition: transform 0.3s ease-out;
+
+}
+
+/*Sa ovim smo rijesili da nikad ne vidimo SideDrawer na velikom ekranu*/
+@media(min-width: 500px){
+
+    .SideDrawer{ 
+        display:none;
+
+    }
+
+}
+/*Open ce dovesti sideDrawer tamo gdje smo definisali u SideDrawwr klasi*/
+.Open{
+
+transform: translateX(0);
+
+}
+
+.Closed{
+
+    transform: translateX(-100%);
+
+}
+
+
+
+.Logo{
+
+height: 11%;
+margin-bottom:32px;
+
+}

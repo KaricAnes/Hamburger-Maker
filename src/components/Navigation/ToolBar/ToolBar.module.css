@@ -1,0 +1,52 @@
+.ToolBar{
+
+height: 56px;
+width: 100%;
+
+/*da je uvijek na vrhu cak i ako skrolamo*/
+position: fixed;
+top:0;
+left:0;
+background-color: #703B09;
+
+/*da svi budu jedan kraj drugoga*/
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+/*0 top i bottom, lijevo i desno 20px*/
+padding: 0 20px;
+
+box-sizing: border-box;
+/*Broj je morao biti manji od onog koji je settan u Backdropu.cssu u z-indexu*/
+z-index: 90;
+}
+
+
+.ToolBar nav {
+
+height: 100%;
+
+
+
+}
+
+
+.Logo{
+
+    height: 80%;
+}
+
+
+
+@media(max-width: 499px) {
+/*Toolbar*/
+    .DesktopOnly{
+
+display:none;
+
+    }
+
+
+
+}

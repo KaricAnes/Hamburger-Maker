@@ -1,0 +1,20 @@
+.Logo{
+
+background-color: white;
+padding: 8px;
+
+/*Gdje god ga stavimo on ce zauzimati 80% visine toga*/
+height: 100%;
+
+/*Tako da 80% heighta ukljucuje i padding*/
+box-sizing: border-box;
+border-radius: 5px;
+
+}
+
+
+.Logo img {
+
+height: 100%;
+
+}

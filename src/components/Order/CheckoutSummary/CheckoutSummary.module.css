@@ -1,0 +1,17 @@
+.CheckoutSummary {
+
+    /*Buttoni i text ne budu centrirani ako ga nema*/
+    text-align: center;
+
+    width: 80%;
+
+    /*Ako je nema ode sve u desno*/
+    margin: auto;
+    
+}
+
+/*@media (min-width: 600px){
+    .CheckoutSummary{
+width: 500px;
+
+}}*/

@@ -1,0 +1,32 @@
+.NavigationItems{
+
+margin:0;
+padding: 0;
+list-style: none;
+
+/*da budu jedno pored drugog*/
+display:flex;
+flex-flow:column;
+
+/*Da budu vertikalno centrirani*/
+align-items: center;
+height:100%;
+
+
+}
+
+@media(min-width: 500px){
+
+    .NavigationItems{
+
+      
+        flex-flow: row;
+        
+      
+        
+        
+        }
+        
+
+
+}
