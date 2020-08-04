@@ -1,110 +1,86 @@
-.NavigationItem{
+.NavigationItem {
+  margin: 10px 0;
+  box-sizing: border-box;
 
-margin: 10px 0;
-box-sizing: border-box;
+  /*display: flex;*/
+  display: block;
 
-/*display: flex;*/
-display: block;
+  /*height: 100%;*/
+  width: 100%;
 
-/*height: 100%;*/
-width: 100%;
-
-/*jer je display:block pvp nam ne treba*/
-/*align-items: center;*/
-
-
-
-
+  /*jer je display:block pvp nam ne treba*/
+  /*align-items: center;*/
 }
-
-
 
 .NavigationItem a {
+  /*color:white;*/
+  color: #8f5c2c;
 
-/*color:white;*/
-color:#8F5C2C;
+  text-decoration: none;
 
+  /*height: 100%;*/
+  width: 100%;
 
-text-decoration: none;
-
-/*height: 100%;*/
-width: 100%;
-
-/*left right je 10px*/
-/*padding: 16px 10px;
+  /*left right je 10px*/
+  /*padding: 16px 10px;
 border-bottom: 4px solid transparent;*/
 
-/*da height ukljucuje i padding*/
-box-sizing: border-box;
+  /*da height ukljucuje i padding*/
+  box-sizing: border-box;
 
-/*da visina ima efekta*/
-display: block;
-
+  /*da visina ima efekta*/
+  display: block;
 }
-
 
 .NavigationItem a:hover,
 .NavigationItem a:active, /*za one koji su aktivni*/
-.NavigationItem a.active{ /*za one koji imaju klasu active*/
+.NavigationItem a.active {
+  /*za one koji imaju klasu active*/
 
-/*background-color: #8F5C2C;
+  /*background-color: #8F5C2C;
 border-bottom: 4px solid #40A4C8;*/
-color: #40A4C8;
-
+  color: #40a4c8;
 }
- 
 
-@media(min-width: 500px) {
+@media (min-width: 500px) {
+  .NavigationItem {
+    margin: 0;
 
-    .NavigationItem{
+    /*Jer je vec definisano u originalnoj klasi iznad i ista je vrijednost*/
+    /*box-sizing: border-box;*/
 
-        margin: 0;
+    display: flex;
+    height: 100%;
+    width: auto;
 
-        /*Jer je vec definisano u originalnoj klasi iznad i ista je vrijednost*/
-        /*box-sizing: border-box;*/
+    align-items: center;
+  }
 
-        display: flex;
-        height: 100%;
-        width:auto;
-        
-        align-items: center;
-        
-        
-        
-        
-        }
-        
-        
-        
-        .NavigationItem a {
-        
-        color:white;
+  .NavigationItem a {
+    color: white;
 
-        /*Vec je gore definisan*/
-        /*text-decoration: none;*/
-        height: 100%;
-        
-        /*left right je 10px*/
-        padding: 16px 10px;
-        border-bottom: 4px solid transparent;
-        
-        /*da height ukljucuje i padding*/
-        /*box-sizing: border-box;*/ /* Vec definisano gore*/
-        
-        /*da visina ima efekta*/
-        /*display: block;*/  /* Vec definisano gore*/
-        
-        }
-        
-        
-        .NavigationItem a:hover,
+    /*Vec je gore definisan*/
+    /*text-decoration: none;*/
+    height: 100%;
+
+    /*left right je 10px*/
+    padding: 16px 10px;
+    border-bottom: 4px solid transparent;
+
+    /*da height ukljucuje i padding*/
+    /*box-sizing: border-box;*/ /* Vec definisano gore*/
+
+    /*da visina ima efekta*/
+    /*display: block;*/ /* Vec definisano gore*/
+  }
+
+  .NavigationItem a:hover,
         .NavigationItem a:active, /*za one koji su aktivni*/
-        .NavigationItem a.active{ /*za one koji imaju klasu active*/
-        
-        background-color: #8F5C2C;
-        border-bottom: 4px solid #40A4C8;
-        color: white;
-        
-        }
+        .NavigationItem a.active {
+    /*za one koji imaju klasu active*/
 
+    background-color: #8f5c2c;
+    border-bottom: 4px solid #40a4c8;
+    color: white;
+  }
 }
